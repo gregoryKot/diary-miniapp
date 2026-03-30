@@ -39,8 +39,7 @@ export default function App() {
   useEffect(() => {
     window.Telegram?.WebApp?.ready();
     window.Telegram?.WebApp?.expand();
-    const timeout = setTimeout(() => setLoading(false), 5000);
-    load().finally(() => clearTimeout(timeout));
+    load();
   }, [load]);
 
   const handleDelete = async (type: DiaryType, id: number) => {
