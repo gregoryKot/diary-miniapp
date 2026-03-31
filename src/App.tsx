@@ -16,7 +16,7 @@ export default function App() {
   const [schemaEntries, setSchemaEntries] = useState<SchemaDiaryEntry[]>([]);
   const [modeEntries, setModeEntries] = useState<ModeDiaryEntry[]>([]);
   const [gratitudeEntries, setGratitudeEntries] = useState<GratitudeDiaryEntry[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   const load = useCallback(async () => {
     try {
